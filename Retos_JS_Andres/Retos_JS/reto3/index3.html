@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversión de Temperaturas</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles3.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Conversión de Temperaturas</h1>
+    <div id="menu">
+      <label for="temperature">Ingresa la temperatura en grados:</label>
+      <input type="text" id="temperature">
+      <label for="from">Va a convertir de:</label>
+      <select id="from">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <label for="to">Desea convertir a:</label>
+      <select id="to">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <button onclick="convertTemperature()">Conversión</button>
+      <a class="btn btn-principal" href="/Retos_JS/index.html">&nbsp; Volver &nbsp;</a>
+    </div>
+  </div>
+  <script src="js/reto3.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos JavaScript</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  </head>
+<body>
+  <div class="card">
+      <h1>Metodos JavaScript</h1>
+      <table>
+        <tr>
+          <th>Evento</th>
+          <th>Ejemplo de Aplicación</th>
+          <th>Ejecución al hacer clic</th>
+        </tr>
+        <tr>
+          <td>click</td>
+          <td>Botón que muestra un mensaje</td>
+          <td><button onclick="alert('Has hecho clic')">Haz clic</button></td>
+        </tr>
+        <tr>
+          <td>mouseenter</td>
+          <td>Elemento que cambia de color al pasar el ratón por encima</td>
+          <td><div onmouseenter="this.style.backgroundColor = 'red'">Pasa el ratón aquí</div></td>
+        </tr>
+        <tr>
+          <td>mouseleave</td>
+          <td>Elemento que vuelve a su color original al salir el ratón</td>
+          <td><div onmouseleave="this.style.backgroundColor = 'white'">Saca el ratón de aquí</div></td>
+        </tr>
+        <tr>
+          <td>keydown</td>
+          <td>Caja de texto que muestra la tecla presionada</td>
+          <td><input type="text" onkeydown="alert('Has presionado la tecla: ' + event.key)"></td>
+        </tr>
+        <tr>
+          <td>submit</td>
+          <td>Formulario que muestra un mensaje al enviar</td>
+          <td>
+            <form onsubmit="alert('Formulario enviado'); return false;">
+              <input type="submit" value="Enviar">
+            </form>
+          </td>
+        </tr>
+        <tr>
+          <td>load</td>
+          <td>Página que muestra un mensaje al cargarse completamente</td>
+          <td><body onload="alert('La página se ha cargado')">Contenido de la página</body></td>
+        </tr>
+        <tr>
+          <td>focus</td>
+          <td>Caja de texto que muestra un mensaje al obtener el foco</td>
+          <td><input type="text" onfocus="alert('Has enfocado esta caja de texto')"></td>
+        </tr>
+        <tr>
+          <td>blur</td>
+          <td>Caja de texto que muestra un mensaje al perder el foco</td>
+          <td><input type="text" onblur="alert('Has perdido el foco de esta caja de texto')"></td>
+        </tr>
+        <tr>
+          <td>mouseover</td>
+          <td>Imagen que cambia al pasar el ratón por encima</td>
+          <td><img src="perro1.jpg" onmouseover="this.src='imagen2.jpg'" onmouseout="this.src='perro1.jpg'"></td>
+        </tr>
+        <tr>
+          <td>contextmenu</td>
+          <td>Elemento que muestra un menú contextual al hacer clic derecho</td>
+          <td><div oncontextmenu="alert('Menú contextual mostrado'); return false;">Haz clic derecho aquí</div></td>
+        </tr>
+        </table>
+        <a class="btn btn-principal" href="/Retos_JS/index.html">&nbsp; Volver &nbsp;</a>
+    </div>
+  </div>
+ </body>
+</html>

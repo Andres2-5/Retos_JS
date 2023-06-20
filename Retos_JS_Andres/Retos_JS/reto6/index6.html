@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="./css/styles6.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+      <h1>Figuras Geométricas</h1>
+      <button onclick="openModal('circle')">Círculo</button>
+    </div>
+  
+    <div class="card">
+      <button onclick="openModal('triangle')">Triángulo</button>
+    </div>
+  
+    <div class="card">
+      <button onclick="openModal('rectangle')">Rectángulo</button>
+    </div>
+  
+    <div class="card">
+      <button onclick="openModal('square')">Cuadrado</button>
+    </div>
+  
+    <div id="circleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('circle')">&times;</span>
+        <h2>Círculo</h2>
+        <label for="circleRadius">Radio:</label>
+        <input type="number" id="circleRadius">
+        <button onclick="calculateCircle()">Calcular</button>
+        <div id="circleResult" class="result"></div>
+      </div>
+    </div>
+  
+    <div id="triangleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('triangle')">&times;</span>
+        <h2>Triángulo</h2>
+        <label for="triangleBase">Base:</label>
+        <input type="number" id="triangleBase">
+        <label for="triangleHeight">Altura:</label>
+        <input type="number" id="triangleHeight">
+        <button onclick="calculateTriangle()">Calcular</button>
+        <div id="triangleResult" class="result"></div>
+      </div>
+    </div>
+  
+    <div id="rectangleModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('rectangle')">&times;</span>
+        <h2>Rectángulo</h2>
+        <label for="rectangleBase">Base:</label>
+        <input type="number" id="rectangleBase">
+        <label for="rectangleHeight">Altura:</label>
+        <input type="number" id="rectangleHeight">
+        <button onclick="calculateRectangle()">Calcular</button>
+        <div id="rectangleResult" class="result"></div>
+      </div>
+    </div>
+  
+    <div id="squareModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('square')">&times;</span>
+        <h2>Cuadrado</h2>
+        <label for="squareSide">Lado:</label>
+        <input type="number" id="squareSide">
+        <button onclick="calculateSquare()">Calcular</button>
+        <div id="squareResult" class="result"></div>
+      </div>
+    </div>
+    <a class="btn btn-principal" href="/Retos_JS/index.html">&nbsp; Volver &nbsp;</a>
+    <script src="js/reto6.js"></script>
+</body>
+</html>

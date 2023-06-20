@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #BCC5CE;
+}
+  
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+input[type="text"]{
+    margin: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.card {
+    background-color: #E6DFD9;
+    margin: auto;
+    margin-top: 20px;
+    width: 400px;
+    padding: 20px;
+  }
